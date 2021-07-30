@@ -6,7 +6,7 @@ if (!GetKeyState("Shift", "P") && ExplorerHwnd := WinActive("ahk_exe Explorer.EX
 	{
 		if (window.hwnd == ExplorerHwnd)
 		{
-			dir := window.Document.Folder.Self.Path
+			dir := StrReplace(window.Document.Folder.Self.Path, "'", "''")
 			break
 		}
 	}
