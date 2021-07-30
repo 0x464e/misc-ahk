@@ -15,8 +15,10 @@ Easily pscp files from clipboard, made this for my [university's programming cou
 Automatically focus the console in PyCharm after using the hotkey to run or debug a script.
 * **`remove norwegian.ahk`**  
 Razer Synapse for some odd reason adds the Noregian keyboard layout to my computer every single time my computer stars, this script runs on Windows startup and removes it.
-* **`run wt.ahk`**  
+* **`run-wt-powershell.ahk`**  
 Starts up PowerShell in the Windows Terminal in the explorer folder that is currently open (override by holding `shift` so it runs in `~`)
+* **`run-wt-wsl.ahk`**  
+Starts up WSL (**W**indows **S**ubsystem for **L**inux) in the Windows Terminal in the explorer folder that is currently open (override by holding `shift` so it runs in `~`)
 * **`VimCapsLockToEsc.ahk`**  
 My script to map CapsLock to ESC in Vim
 
