@@ -5,7 +5,11 @@ SetTitleMatchMode, 2
 
 #IfWinActive, Stack Overflow ahk_exe chrome.exe
 :?OX::sup!::SendInput, % "<sup>[(docs)]()</sup>{Left 7}"
+:?OX::kbd!::SendInput, % "<kbd></kbd>{Left 6}"
 #IfWinActive
+
+:?OX::supsub!::
+:?OX::subsup!::SendInput, % "<sub><sup></sup></sub>{Left 12}"
 
 #IfWinActive, ahk_exe Discord.exe
 ^F12::
