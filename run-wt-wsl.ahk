@@ -6,7 +6,7 @@ if (!GetKeyState("Shift", "P") && ExplorerHwnd := WinActive("ahk_exe Explorer.EX
 	{
 		if (window.hwnd == ExplorerHwnd)
 		{
-			dir := StrReplace(RegExReplace(window.Document.Folder.Self.Path, "(\(|\)|\[|\])", "``$1"), ";", "\;")
+			dir := StrReplace(window.Document.Folder.Self.Path, ";", "\;")
 			break
 		}
 	}
