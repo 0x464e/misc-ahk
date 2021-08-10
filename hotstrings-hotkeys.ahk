@@ -18,4 +18,5 @@ SetTitleMatchMode, 2
 return
 #IfWinActive
 
+:*?B0X::edithotkeys!::
 :*?B0X::edithotstrings!::Run, % """C:\Program Files\AutoHotkey\SciTE\SciTE.exe"" """ A_ScriptFullPath """"
