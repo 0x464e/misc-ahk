@@ -14,5 +14,4 @@ if (!GetKeyState("Shift", "P") && ExplorerHwnd := WinActive("ahk_exe Explorer.EX
 else
 	dir := "C:\Users\" A_UserName
 
-Run, % "wt.exe powershell -NoLogo -NoExit -Command ""Set-Location -LiteralPath '" Dir "'"""
-;-Command ""$Host.UI.RawUI.WindowTitle='Console'""
+Run, % "wt.exe pwsh -NoLogo -NoExit -Command ""Set-Location -LiteralPath '" Dir "'"""
