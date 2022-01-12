@@ -31,8 +31,7 @@ F16::
 		else
 			dir := "C:\Users\" A_UserName "\Desktop"
 	}
-	else
-		dir := "C:\Users\" A_UserName
-
-	Run, % "wt.exe -d """ dir """ wsl"
+	
+	;start with -d and clear 'dir' if is to be started in some directory
+	Run, % "wt.exe " (dir ? ("-d """ dir """ wsl", dir := "") : "wsl ~")
 return
