@@ -36,5 +36,5 @@ F15::
 	
 	;Set-Location -LiteralPath used to not need to escape even more characters which have
 	;special meanings in a PowerShell command
-	Run, % "wt.exe pwsh -NoLogo -NoExit -Command ""Set-Location -LiteralPath '" dir "'"""
+	Run, % "wt.exe pwsh -NoLogo -NoExit -Command ""Set-Location -LiteralPath '" dir "' && clear"""
 return
