@@ -2,6 +2,10 @@
 This repository contains all kinds of miscellaneous AHK scripts that I use more or less. Mainly quality-of-life scripts, also something more random.
 
 ## Brief explanations
+* **`capslock-to-esc.ahk`**  
+Quick little script to remap CapsLock to ESC system wide.  
+Shift+CapsLock can be used to still send a CapsLock.  
+If you use this, don't use `VimCapsLockToEsc.ahk` at the same time.
 * **`ffmpeg-list.ahk`**  
 ffmpeg each file from clipboard, edit the script always to contain the specific switches you'll want.
 * **`hotstrings-hotkeys.ahk`**  
