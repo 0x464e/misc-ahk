@@ -19,7 +19,7 @@ OverrideCapsLock()
 	if (title ~= "- VIM\d?$")	;regex match shorthand
 		return true
 	WinGet, proc_name, ProcessName	;use last found window
-	if (proc_name = "webstorm64.exe" || proc_name = "putty.exe")
+	if (proc_name = "webstorm64.exe" || proc_name = "putty.exe" || proc_name = "idea64.exe")
 		return true
 	return false
 }
